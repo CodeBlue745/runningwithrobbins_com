@@ -1,6 +1,28 @@
 /* CSS Document */
-
+/*Headers*/
+h1{
+	text-align: center;
+}
+header{
+	
+}
+/*Parts of the page.*/
 section{
 	text-align: center;
 	margin: 100px auto auto auto;
 }
+.block1{
+	float: right;
+}
+/*Written Works*/
+.post{
+	text-overflow: hidden;}
+article{
+			float: left;
+  			background-repeat: repeat;
+  			background-image: url("../Images/Adaptive/parchmentBackground.jpg");
+			background-blend-mode: multiply;
+			max-width: 600px;
+		}
+
+
