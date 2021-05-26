@@ -1,15 +1,42 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Running with Robbins</title>
 	<link rel="stylesheet" href="index.css">
+	<script src="index.js" defer></script>
 </head>
-
-<body>
-	<t1>RunningwithRobbins.com</t1>
-	<header>
-		
+<body id="bod1">
+	<header id="indexHeader">
+		<p id="recentPosts">Pages Coming Soon!</p>
+		<!--I want this page to rotate through each of these links as it zooms around the page. 
+It calls dropdown() which will rotate through elements Home, Theories, Experiences, etc.-->
+		<button class="menuBtn" onClick="dropdown()"><hr><hr><hr></button>
+			<figure>
+				<a href="index.html">
+				<img src="Images/stephenLogoSm.jpg" alt="Running with Robbins Logo"> 
+				<pre class="brand">Running
+   with
+Robbins
+				</pre>
+				</a>
+			</figure>
 	</header>
+	<div class="sidenav" id="shownav" >
+		<button onClick="document.location='index.html'">Home</button>
+		<button onClick="document.location='Pages/theories.html'">Theories</button>
+		<button onClick="document.location='Pages/experiences.html'">Experiences</button>
+        <button onClick="document.location='Pages/games.html'">Games</button>
+        <button onClick="document.location='Pages/events.html'">Events</button>
+	</div>
+	<article id="art1">
+		<h2>Article Header</h2>
+	</article>
+	<section id="sec1"></section>
+	<footer id="foot1">
+		<div class="sec1">
+			footer
+		</div>
+	</footer>
 </body>
 </html>

@@ -1,5 +1,84 @@
 /* CSS Document */
 
 header{
-	background-color: purple;
+	background-color: #DEF2F1;
+	margin: auto auto auto 60px;
 }
+button{
+	height: 30px;
+	width: 100px;
+	margin: 8px;
+	background-color: #FEFFFF;
+	border-radius: 15px;
+}
+body{
+	background-color: #3AAFA9;
+	margin: 0px;
+}
+div.sidenav{
+	display: none;
+	height: 100%;
+	width: 120px;
+	position: fixed;
+	text-align:  center;
+	z-index: 1; /*Stay on top of other elements.*/
+	top: 0;
+	left: 0;
+	background-color: #DEF2F1;
+	overflow-x: hidden; /*disables horizontal scrolling*/
+}
+figure, img, pre{
+	text-align: left;
+	width: 100px;
+	margin: auto auto auto 0px;
+}
+/*If the banner is present: 
+margin: auto auto auto 130px;
+margin-left: 10px;*/
+pre.brand{
+	margin: 20px -15px 0px 2px;
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 2px 2px #2B7A78;
+	color: black;
+}
+a{
+text-decoration: none;
+}
+.square{
+	
+}
+hr{
+	width: 10px;
+	align: left;
+	margin: 3px 10px 5px 10px;
+}
+button.menuBtn{
+	
+	width: 50px;
+	height: 35px;
+	margin: 0px 0px 0px -55px;
+	background-color: #3AAFA9;
+	border-bottom: 4px solid #000000;
+	display: block;
+}
+/*Animations*/
+#recentPosts {
+  width: 50px;
+  height: 20px;
+  background: none;
+  position: relative;
+  animation: mymove 10s linear infinite;
+}
+@keyframes mymove {
+	0% {top: 0px; left: 0px;}
+	33% {top: 0px; left: 1700px;}
+	66%{top: 900px; left: 1700px;}
+	100%{top: 0px; left: 0px;}
+}
+/*Colors: 17252A
+2B7A78
+3AAFA9
+DEF2F1
+FEFFFF*/
+

@@ -1,0 +1,8 @@
+#weather, #apod-image{
+    display:none;
+  }
+  
+.spacepic, .weatherData{
+	padding-top: 100px;
+	align:center;
+}
