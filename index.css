@@ -1,68 +1,82 @@
-/* CSS Document */
-
-header{
-	background-color: #DEF2F1;
-	margin: auto auto auto 60px;
-}
-button{
-	height: 30px;
-	width: 100px;
-	margin: 8px;
-	background-color: #FEFFFF;
-	border-radius: 15px;
-}
+/*Neutral Color Theme: 17252A
+2B7A78
+3AAFA9
+DEF2F1
+FEFFFF*/
 body{
 	background-color: #3AAFA9;
-	margin: 0px;
+
 }
-div.sidenav{
+.wrapper{
+	display: grid;
+	grid-template-columns: 10%;
+	grid-template-rows: auto;
+}
+header{
+	grid-row: 1;
+	grid-column: 2;
+	grid-column-end: 9;
+	background-color: #DEF2F1;
+}
+/*TODO: Work on positioning this image on the main page.*/
+figure{
+	margin-left: 0px;
+}
+img{
+	text-align: left;
+	width: 100px;
+	margin: auto;
+}
+.brand{
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 2px 2px #2B7A78;
+	color: black;
+	margin-bottom: 10px;
+	margin-left: 100px;
+	margin-top: 0px;
+}
+/*****Navigation*****/
+.menuBtn, .navBtn{
+	border-radius: 15px;
+	align-content: center;
+  	grid-row: 1;
+	grid-column: 1;
+	height: 40px;
+	width: 50px;
+	background-color: #3AAFA9;
+	border-bottom: 4px solid #000000;
+	display: block;
+}
+.navBtn{
+	height: 40px;
+	width: 100px;
+	margin: 10px;
+	background-color: #FEFFFF;
+}
+hr{
+	background-color: #FEFFFF;
+	width: 10px;
+	align: left;
+}
+a{
+text-decoration: none;
+}
+.sidenav{
+	grid-row: 1;
+	grid-column: 1;
 	display: none;
 	height: 100%;
 	width: 120px;
 	position: fixed;
 	text-align:  center;
 	z-index: 1; /*Stay on top of other elements.*/
-	top: 0;
-	left: 0;
+	top: 8px;
+	left: 0px;
 	background-color: #DEF2F1;
 	overflow-x: hidden; /*disables horizontal scrolling*/
 }
-figure, img, pre{
-	text-align: left;
-	width: 100px;
-	margin: auto auto auto 0px;
-}
-/*If the banner is present: 
-margin: auto auto auto 130px;
-margin-left: 10px;*/
-pre.brand{
-	margin: 20px -15px 0px 2px;
-	font-size: 25px;
-	font-family: 'Roboto', sans-serif;
-	text-shadow: 2px 2px #2B7A78;
-	color: black;
-}
-a{
-text-decoration: none;
-}
-.square{
-	
-}
-hr{
-	width: 10px;
-	align: left;
-	margin: 3px 10px 5px 10px;
-}
-button.menuBtn{
-	
-	width: 50px;
-	height: 35px;
-	margin: 0px 0px 0px -55px;
-	background-color: #3AAFA9;
-	border-bottom: 4px solid #000000;
-	display: block;
-}
-/*Animations*/
+/*****Animations*****/
 #recentPosts {
   width: 50px;
   height: 20px;
@@ -76,9 +90,16 @@ button.menuBtn{
 	66%{top: 900px; left: 1700px;}
 	100%{top: 0px; left: 0px;}
 }
-/*Colors: 17252A
-2B7A78
-3AAFA9
-DEF2F1
-FEFFFF*/
-
+/*****Writings*****/
+article{
+	grid-row: 2;
+	grid-column: 5;
+	text-align: center;
+}
+/*TODO: Move footer to bottom of page.*/
+footer{
+/*	grid-row: auto;*/
+	grid-column: 5;
+	text-align: center;
+	bottom: 0%;
+}

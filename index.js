@@ -1,9 +1,8 @@
-// JavaScript Document
-//Remember to grab the element id for javascript, class name for CSS.
-var i = 0;
-/*if coords = 0,0 call cycle().*/
+/*JavaScript Document
+Remember to grab the element id for javascript, class name for CSS.
+if coords = 0,0 call cycle().*/
 function getCoords(i) {
-	var recents = document.getElementById("recentPosts"), 
+	var recents = document.getElementById("recentPosts"),
 		rect = recents.getBoundingClientRect();
 	if(rect.top >= 16 && rect.left <= 250){
 		cycle(i, recents);
@@ -12,45 +11,45 @@ function getCoords(i) {
 }
 /*Cycles through a list of Pages.*/
 function cycle(i, recents){
-	var pages = ["Events", "Experiences", "Games", "Projects", "Theories", "end"];
-	var pgNum = Math.round(i * .0001)/2;
-	if(pgNum < 2){
-		recents.innerHTML = pages[pgNum];
+	//var link = document.createElement('a');
+	var pages = ["Events", "Experiences"];
+	var pgNum = Math.round(i * 0.0001);
+	if(pgNum >= pages.length){
+		return;
 	}
-	else{/*go back to normal*/
-		pgNum = 0;
+	else{
 		recents.innerHTML = pages[pgNum];
-		return i = 39.8, recents;
+		/*var x = pages.push(link);
+		console.log(x);*/
 	}
-	console.log(i);
 }
-/*var newPage = recents.innerHTML;
-		var link = document.createElement('a');
-		link.href = 'https://google.com';
-		link.appendChild(newPage);
-		recents.append(link);*/
-getCoords(i);
+getCoords();
+
+var navB = document.getElementById("navB");
+var nav = document.getElementById("nav");
+navB.addEventListener("click", function(){
+	appearance(1);
+});
+nav.addEventListener("mouseleave", function(){
+	appearance(2);
+});
+function appearance(data){
+	try{
+		if(data === 1){
+		document.getElementById("nav").style.display = 'block';
+	}
+	else{
+		document.getElementById("nav").style.display = 'none';
+	}
+	}
+	catch(error){
+		alert(error);
+	}
+}
+/*I want to have an image carosel on my front page.
 function preloadImages() {
 	for(var i = 0; i < imgArray.length; i++) {
 	var tmpImg = new Image;
 	tmpImg.src = imgPath + imgArray[i];
 	}
-}
-/*Show Nav menu on btn. click.*/
-function dropdown(){
-	var down = document.getElementById("shownav");
-	down.style.display = 'block';
-}
-function clickPhoto(){
-	/*switch to GuitarandUkulele*/
-}
-/*If window is clicked, nav display is set to none.*/
-function windowClick(){
-	window.click(function(){
-		alert("clickified");
-	});
-	/*if(window.click == true){
-		down.style.display = 'none';
-	}*/
-}
-windowClick()
+}*/

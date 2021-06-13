@@ -6,37 +6,32 @@
 	<link rel="stylesheet" href="index.css">
 	<script src="index.js" defer></script>
 </head>
-<body id="bod1">
-	<header id="indexHeader">
-		<p id="recentPosts">Pages Coming Soon!</p>
-		<!--I want this page to rotate through each of these links as it zooms around the page. 
-It calls dropdown() which will rotate through elements Home, Theories, Experiences, etc.-->
-		<button class="menuBtn" onClick="dropdown()"><hr><hr><hr></button>
-			<figure>
-				<a href="index.html">
-				<img src="Images/stephenLogoSm.jpg" alt="Running with Robbins Logo"> 
-				<pre class="brand">Running
-   with
-Robbins
+<body>
+  <section class="wrapper">
+	  <button class="menuBtn" id="navB"><hr><hr><hr></button>
+	  <header id="indexHeader">
+		  <p id="recentPosts">Pages Coming Soon!</p>
+		  <figure>
+			  <pre class="brand"><img src="Images/stephenLogoSm.jpg" alt="Running with Robbins Logo">Running
+		 	  with
+				Robbins
 				</pre>
-				</a>
-			</figure>
-	</header>
-	<div class="sidenav" id="shownav" >
-		<button onClick="document.location='index.html'">Home</button>
-		<button onClick="document.location='Pages/theories.html'">Theories</button>
-		<button onClick="document.location='Pages/experiences.html'">Experiences</button>
-        <button onClick="document.location='Pages/games.html'">Games</button>
-        <button onClick="document.location='Pages/events.html'">Events</button>
-	</div>
-	<article id="art1">
-		<h2>Article Header</h2>
-	</article>
-	<section id="sec1"></section>
-	<footer id="foot1">
-		<div class="sec1">
-			footer
-		</div>
-	</footer>
+		  </figure>
+	  </header>
+	  <div class="sidenav" id="nav" >
+		  <button class="navBtn" id="btn1" onClick="document.location='index.html'">Home</button>
+		  <button class="navBtn" id="btn2" onClick="document.location='Pages/theories.html'">Theories</button>
+		  <button class="navBtn" id="btn3" onClick="document.location='Pages/experiences.html'">Experiences</button>
+		  <button class="navBtn" id="btn4" onClick="document.location='Pages/games.html'">Games</button>
+		  <button class="navBtn" id="btn5" onClick="document.location='Pages/events.html'">Events</button>
+	  </div>
+	  <article> 
+		  <h2>Article Header</h2>
+		The
+	  </article>
+	  <footer id="foot1">
+		Brought to you by Stephen Robbins, coding extraordinaire
+	  </footer>
+	</section>
 </body>
 </html>
