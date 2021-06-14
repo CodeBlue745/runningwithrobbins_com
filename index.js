@@ -9,7 +9,7 @@ function getCoords(i) {
 	}
 	window.requestAnimationFrame(getCoords); //This requests each movement of the animation.
 }
-/*Cycles through a list of Pages.*/
+/*Cycles through a list of Pages.*/ 
 function cycle(i, recents){
 	//var link = document.createElement('a');
 	var pages = ["Events", "Experiences"];
